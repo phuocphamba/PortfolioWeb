@@ -1,0 +1,272 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+
+.menu {
+  background-size: cover;
+  background-color: transparent;
+  z-index: 2;
+  position: fixed;
+  float: left!important;
+  width: 100%;
+  height: max-content;
+}
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  position: relative;
+  padding: 1%;
+}
+.menu > ul > li > a {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 6px;
+  transition: 1.5s; 
+  text-decoration: none;
+}
+.menu > ul > li > a:hover {
+  color: yellow;
+  border-bottom: 3px solid green;
+  border-top: 3px solid green;
+}
+/*----------------------menu-------------------------------*/
+#backgroundIntro {
+  background-image: url('picture/Yellow.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.h1 {
+  color: rgb(3, 70, 3);
+  font-size: 500%;
+  position: relative;
+  text-align: right;
+  top: 40%;
+  left: 0;
+  width: 85%;
+  height: 30%;
+  padding: 0;
+}
+
+.h1 > div {
+  background-color: rgb(3, 70, 3);
+  color: white;
+  font-size: 50%;
+  padding-right: 30px;
+
+}
+
+#picIntro {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 20vw;
+  height: 55vh;
+}
+@media (max-width: 1354px){
+  #picIntro{
+    top: 40%;
+    left: 2%;
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+  }
+}
+@media (max-width: 1000px){
+  #picIntro{
+    top: 8vh;
+    left: 45vw;
+    position: absolute;
+    height: 33vh;
+    width: 25vw;
+  }
+}
+@media (max-width: 700px){
+  #picIntro{
+    left: 45w;
+    position: absolute;
+    height: 25vh;
+    width: 25vw;
+    top: 100%;
+  }
+}
+
+
+/* ----------------------page 1-------*/
+#aboutMe {
+  background-image: url('picture/pic1.png');
+  background-size: cover;
+  height: 110vh;
+  text-align: center;
+  
+}
+
+.subBack {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 70%;
+  height: 110vh;
+  margin-left: 15%;
+  
+}
+.subBack > h1 {
+  top: 30%;
+  position: relative;
+  font-size: 45px;
+  background-color: aliceblue;
+  text-align: right;
+  padding-right: 18%;
+}
+.pic {
+  position: absolute;
+  height: 45vh;
+  margin-top: 5%;
+  left: 30%;
+  z-index: 1;
+}
+@media (max-width: 1000px){
+  .pic{
+    position: absolute;
+    height: 35vh;
+    margin-top: 7%;
+    left: 25%;
+  }
+  .row {
+    font-size: 10px;
+    margin-top: 30%;
+  }
+}
+@media (max-width: 700px){
+  .pic{
+    position: absolute;
+    height: 15vh;
+    margin-top: 7%;
+    left: 5%;
+    z-index: 1;
+    
+  }
+  .row {
+    margin-top: 25%;
+    font-size: 5px;
+    display: flex;
+  }
+  .subBack{
+    width: 100%;
+  }
+}
+.row {
+  margin-top: 40%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  position: relative;
+}
+.row > div {
+  width: 200px;
+  height: 145px;
+  border-radius: 12px;
+  padding: 1%;
+  background-color: white;
+}
+/*----------------------page 2 -------------*/
+ #work {
+   background-size: cover;
+   background-image: url('picture/backgr.jpg');
+   height: 100vh;
+   text-align: center;
+ }
+ .content{
+   margin-left: 10%;
+   width: 80%;
+   height: 100%;
+   background-color: rgba(17, 17, 17, 0.3);
+ }
+ .content > h1 {
+   position: relative;
+   color: black;
+   font-size: 40px;
+   background-color: white;
+   width: 100%;
+   top: 10%;
+ }
+
+.projects {
+  padding-top: 15%;
+  display: flex;
+  width: 100%
+  heigh: 60%;
+  left: 0;
+  justify-content: space-between;
+  position: relative;
+}
+
+.image {
+  width: 15vw;
+  height: 45vh;
+}
+@media (max-width: 900px){
+  .image{
+    
+    width: 15vw;
+    height: 35vh;
+  }
+}
+@media (max-width: 700px){
+  .image{
+    margin-top: 30vh;
+    width: 5vw;
+    height: 10vh;
+  }
+}
+.role {
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 1px;
+  width: 15vw;
+  height: max-content;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.role:hover {
+  background-color: rgba(5, 102, 5, 0.89);
+  color: white;
+  transition: 1s;
+}
+
+.subBackgr {
+    width: 50%;
+    height: 100%;
+    background-color:rgba(17, 17, 17, 0.3) ;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.subBackgr > h1 {
+   position: relative;
+   top: 10%;
+   background-color: white;
+   color: black;
+   font-size: 300%;
+}
+/*------------------------page 3----------------------------*/
+#contactInfor {
+  background-image: url('picture/backgrd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.contactBox {
+  padding-top: 20% ;
+  display: flex;
+  justify-content: space-around;
+}
+.contactBox > div {
+  font-size: 20px;
+  color: white;
+}
+
